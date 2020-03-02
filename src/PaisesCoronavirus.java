@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class PaisesCoronavirus {
 
@@ -12,11 +13,31 @@ public class PaisesCoronavirus {
 		 */
 
 		final String[] PAISES = { "Noruega", "Alemania", " republica checa", "Italia" };
-		boolean[] paisesInfectados = { false, false, false, false };
+		boolean[] paisesInfectados = { false, true, false, true };
 		int[] numeroInfectados = { 0, 0, 0, 0 };
 		paisesInfectados[1] = true;
 		numeroInfectados[1] = 5;
 
-	}
+		Scanner sc = new Scanner(System.in);
 
+		for (int i = 0; i < PAISES.length; i++) {
+			if (paisesInfectados[i] == true) {
+				System.out.println(PAISES[i] + " esta infectado");
+				System.out.println("Cuantos infectados hay?");
+
+				numeroInfectados[i] = sc.nextInt();
+
+			}
+
+		} // cierre for i
+
+		for (int j = 0; j < PAISES.length; j++) {
+
+			if (paisesInfectados[j] == false) {
+
+				System.out.println("Los paises libres son " + PAISES[j]);
+
+			}
+		}
+	}
 }
