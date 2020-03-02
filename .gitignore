@@ -1,0 +1,6 @@
+#ficheos y carpetas que ignora git
+
+/bin/
+/.classpath
+/.project
+/.settings
