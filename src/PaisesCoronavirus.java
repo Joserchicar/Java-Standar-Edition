@@ -14,7 +14,7 @@ public class PaisesCoronavirus {
 
 		final String[] PAISES = { "Noruega", "Alemania", " republica checa", "Italia" };
 		boolean[] paisesInfectados = { false, true, false, true };
-		int[] numeroInfectados = { 0, 0, 0, 0 };
+		int[] numeroInfectados = { 0, 10, 0, 5 };
 		paisesInfectados[1] = true;
 		numeroInfectados[1] = 5;
 
@@ -23,10 +23,11 @@ public class PaisesCoronavirus {
 		for (int i = 0; i < PAISES.length; i++) {
 			if (paisesInfectados[i] == true) {
 				System.out.println(PAISES[i] + " esta infectado");
-				System.out.println("Cuantos infectados hay?");
+				//System.out.println("Cuantos infectados hay?");
 
-				numeroInfectados[i] = sc.nextInt();
-
+				//numeroInfectados[i] = sc.nextInt();
+				System.out.println("Hay " + numeroInfectados[i]+ "  infectados");
+				
 			}
 
 		} // cierre for i
