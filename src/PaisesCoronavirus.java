@@ -21,6 +21,8 @@ public class PaisesCoronavirus {
 		Scanner sc = new Scanner(System.in);
 
 		for (int i = 0; i < PAISES.length; i++) {
+			System.out.println("Tiene algun caso de coronavirus " + PAISES[i] + "?");
+
 			if (paisesInfectados[i] == true) {
 				System.out.println(PAISES[i] + " esta infectado");
 				System.out.println("Cuantos infectados hay?");
@@ -38,6 +40,6 @@ public class PaisesCoronavirus {
 				System.out.println("Los paises libres son " + PAISES[j]);
 
 			}
-		}
+		} // cierre for j
 	}
 }
