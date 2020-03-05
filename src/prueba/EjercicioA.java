@@ -24,7 +24,8 @@ public class EjercicioA {
 			alturas[i] = altura;
 
 			media = media + altura;
-			System.out.println("La media es " + (media));
+
+			System.out.println("La media es " + (media / 5));
 
 			// TODO calcular media
 

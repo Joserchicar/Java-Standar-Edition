@@ -12,7 +12,7 @@ public class ReemplazarCaracteres {
 		descodificado = descodificado.replace('4', 'A');
 		descodificado = descodificado.replace('1', 'I');
 		descodificado = descodificado.replace('3', 'E');
-
+		descodificado = descodificado.toUpperCase();
 		System.out.println(descodificado);
 
 		//
