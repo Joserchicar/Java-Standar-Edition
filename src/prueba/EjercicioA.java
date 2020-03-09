@@ -15,6 +15,9 @@ public class EjercicioA {
 		System.out.println("Empezamos");
 		int[] alturas = new int[5];
 		int media = 0;
+		int alturaMaxima;
+		int alturaMinima;
+
 		Scanner sc = new Scanner(System.in);
 
 		for (int i = 0; i < alturas.length; i++) {
@@ -23,17 +26,27 @@ public class EjercicioA {
 			int altura = Integer.parseInt(sc.nextLine());
 			alturas[i] = altura;
 
+			// calcular media
 			media = media + altura;
 
-			System.out.println("La media es " + (media / 5));
+			// altura maxima
 
-			// TODO calcular media
+			if (altura < alturas[i]) {
 
-			// TODO altura maxima
-			// TODO altura minima
+				alturaMaxima = altura;
+			}
+			// altura minima
+
+			if (altura > alturas[i]) {
+
+				alturaMaxima = altura;
+			}
 
 		} // for
 
+		System.out.println("La media es " + (media / 5));
+		// System.out.println("La altura maxima es " + alturaMaxima);
+		// System.out.println("La altura miinima es " + alturaMinima);
 		System.out.println("Agur Venur");
 
 		sc.close();
