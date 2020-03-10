@@ -26,7 +26,7 @@ public class Utilidades {
 	 * @param idioma
 	 * @throws Throwable
 	 */
-	static void saludar(String nombre, String idioma) throws Exception {
+	static String saludar(String nombre, String idioma) throws Exception {
 
 		System.out.println("Selecciona tu idioma");
 		// String idioma= sc Scanner(System.in);
@@ -37,6 +37,7 @@ public class Utilidades {
 		} else {
 			throw new Exception("El idioma " + idioma + " no es valido");
 		}
+		return "";
 
 	}
 
@@ -77,6 +78,15 @@ public class Utilidades {
 
 		// return calcularLetraDni(int dni)
 
+	}
+
+	public static int[] bubbleShort(int[] aDesordenado) {
+
+		for (int i = 0; i < aDesordenado.length; i++) {
+
+		}
+
+		return null;
 	}
 
 }
