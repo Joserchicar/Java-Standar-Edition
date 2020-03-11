@@ -9,12 +9,12 @@ public class ConfiguradorVehiculos {
 	public static void main(String[] args, String muneroPuertas) {
 
 		Scanner sc = new Scanner(System.in);
-Vehiculo v9=new Vehiculo();
+		Vehiculo v9 = new Vehiculo();
 
-		String color = v9.setColor();
-		String matricula = v9.setMatricula();
-		String numeroRuedas = v9.setNumeroRuedas();
-		String numeroPuertas=v9 = .setNumeroPuertas();
+		String color = v9.getColor();
+		String matricula = v9.getMatricula();
+		int numeroRuedas = v9.getNumeroRuedas();
+		int numeroPuertas = v9.getNumeroPuertas();
 		float potencia = v9.setPotencia();
 
 		System.out.println(" como quiere que sea su vehiculo?");
@@ -26,16 +26,15 @@ Vehiculo v9=new Vehiculo();
 		matricula = sc.nextLine();
 
 		System.out.println("indique el numero de ruedas");
-		numeroRuedas = sc.nextLine();
+		// numeroRuedas = sc.nextLine();
 
 		System.out.println("indique el numero de puertas");
 		muneroPuertas = sc.nextLine();
 		System.out.println("indique la potencia del vehiculo");
-		//potencia = sc.nextLine();
+		// potencia = sc.nextLine();
 		System.out.println("su vehiculo es de color" + color + ", con matricula" + matricula + "con  " + numeroRuedas
 				+ "ruedas , con " + muneroPuertas + " puertas y con " + potencia + " CV de potencia");
-		
-		
+
 		// preguntar por consola como quiere el Vehiculo
 
 		// preguntar color

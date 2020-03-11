@@ -67,8 +67,14 @@ public class Vehiculo {
 		return numeroRuedas;
 	}
 
+	/**
+	 * si el numero de ruedas es menor de cero, entonces, numeroRuedas =0
+	 * 
+	 * @param numeroRuedas
+	 */
 	public void setNumeroRuedas(int numeroRuedas) {
 		this.numeroRuedas = numeroRuedas;
+
 	}
 
 	public float getPotencia() {

@@ -8,6 +8,9 @@ public class Persona {
 
 	private String nombre;
 	private int edad;
+	private float altura;
+	private String genero;
+	private String raza;
 
 	// TODO Auto-generated constructor stub
 
@@ -15,9 +18,18 @@ public class Persona {
 	public Persona() {
 		super();
 
-		this.nombre = "anonimo";
-		this.edad = 18;
+		this.nombre = "";
+		this.edad = 0;
 
+	}
+
+	public Persona(String nombre, int edad, float altura, String genero, String raza) {
+		super();
+		this.nombre = nombre;
+		this.edad = edad;
+		this.altura = altura;
+		this.genero = genero;
+		this.raza = raza;
 	}
 
 	// getters y Setters
@@ -40,13 +52,36 @@ public class Persona {
 		} else {
 			this.edad = edad;
 		}
-
 	}
 
-	// otras funciones
+	public float getAltura() {
+		return altura;
+	}
+
+	public void setAltura(float altura) {
+		this.altura = altura;
+	}
+
+	public String getGenero() {
+		return genero;
+	}
+
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+
+	public String getRaza() {
+		return raza;
+	}
+
+	public void setRaza(String raza) {
+		this.raza = raza;
+	}
+
 	@Override
 	public String toString() {
-		return "Persona [nombre=" + nombre + ", edad=" + edad + "]";
+		return "Persona [nombre=" + nombre + ", edad=" + edad + ", altura=" + altura + ", genero=" + genero + ", raza="
+				+ raza + "]";
 	}
 
 }
