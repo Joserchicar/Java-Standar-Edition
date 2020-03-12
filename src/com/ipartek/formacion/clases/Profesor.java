@@ -8,14 +8,14 @@ public class Profesor extends Persona {
 	public Profesor() {
 		super();
 
-		this.sueldo = 0;
+		this.sueldo = 2000;
 		this.materia = "";
 
 	}
 
 	public Profesor(float sueldo, String materia) {
 		super();
-		this.sueldo = 0;
+		this.sueldo = 2000;
 		this.materia = "";
 	}
 

@@ -2,19 +2,21 @@ package com.ipartek.formacion.clases;
 
 public class Alumno extends Persona {
 
+	public static final int NOTA_MIN = 0;
+	public static final int NOTA_MAX = 10;
 	private String email;
 	private String github;
-	private float nota;
+	private int nota;
 
 	public Alumno() {
 		super();
 		this.email = "";
 		this.github = "";
-		this.nota = 0;
+		this.nota = 5;
 
 	}
 
-	public Alumno(String email, String github, float nota) {
+	public Alumno(String email, String github, int nota) {
 		super();
 		this.email = email;
 		this.github = github;
@@ -41,7 +43,7 @@ public class Alumno extends Persona {
 		return nota;
 	}
 
-	public void setNota(float nota) {
+	public void setNota(int nota) {
 		this.nota = nota;
 	}
 

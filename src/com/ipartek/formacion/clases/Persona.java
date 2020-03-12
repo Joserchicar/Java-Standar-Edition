@@ -1,6 +1,10 @@
 package com.ipartek.formacion.clases;
 
 public class Persona {
+
+	public static final String GENERO_FEMENINO = "f";
+	public static final String GENERO_MASCULINO = "m";
+	public static final String GENERO_INDEFINIDO = "i";
 //Atributos siempre son private para que no se pueda manipular desde fuera de esta
 	// clase.
 // para poder manipular atributos hay que crear metodos publicos 
@@ -25,11 +29,11 @@ public class Persona {
 
 	public Persona(String nombre, int edad, float altura, String genero, String raza) {
 		super();
-		this.nombre = nombre;
-		this.edad = edad;
-		this.altura = altura;
-		this.genero = genero;
-		this.raza = raza;
+		this.nombre = "anonimo";
+		this.edad = 0;
+		this.altura = 0f;
+		this.genero = "i";
+		this.raza = "";
 	}
 
 	// getters y Setters
@@ -62,7 +66,7 @@ public class Persona {
 		this.altura = altura;
 	}
 
-	public String getGenero() {
+	public String getGenero(String genero) {
 		return genero;
 	}
 
